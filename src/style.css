@@ -1,0 +1,49 @@
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hind", sans-serif;
+}
+h2,
+h3 {
+  text-align: center;
+}
+.toppad {
+  margin: 20px;
+}
+
+.citysearch {
+  margin: 20px;
+  display: inline;
+  left: 10px;
+  border-width: 8px;
+  border-color: green;
+}
+
+.changecity {
+  display: inline;
+}
+.today {
+  margin: 30px;
+}
+
+.sunny {
+  color: yellow;
+}
+
+.forecast {
+  max-width: 600px;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
