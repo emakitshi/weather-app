@@ -18,6 +18,20 @@ a:link {
   text-decoration: none;
 }
 
+div {
+  display: block;
+}
+
+.container {
+  max-width: 600px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 1px solid #dadde1;
+  border-radius: 4px;
+}
+
 .toppad {
   margin: 20px;
 }
@@ -28,6 +42,11 @@ a:link {
   left: 10px;
   border-width: 8px;
   border-color: green;
+}
+
+#current-city {
+  border: 1px;
+  border-color: #f8f9fa;
 }
 
 .changecity {
