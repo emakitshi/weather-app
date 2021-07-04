@@ -34,6 +34,10 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+a:link {
+  color:aqua;
+}
+
 .footer {
   text-align: center;
 }
@@ -71,15 +75,20 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   top: -34px;
+  color: aqua;
+
+  
 }
 
 .weather-temperature .active {
   color:#dadde1;
   cursor: default;
+  
 }
 
 .weather-temperature .active:hover {
   text-decoration: none;
+
 }
 
 .weather-forecast {
@@ -133,3 +142,19 @@ li:first-letter {
     100% { top: -1em; opacity: 1; }
 } 
 
+svg {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.filler {
+  background: #20B7AF;
+  position: absolute;
+  top: 10%;
+  top: 0;
+  left: 0;
+  right: 0;
+}
