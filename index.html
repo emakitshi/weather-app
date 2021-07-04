@@ -10,6 +10,15 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/29656e3e38.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="src/style.css" />
@@ -18,31 +27,32 @@
   <body>
     <div class="container">
       <div class="weather-app-wrapper">
-        <div class="weather-app">
-          <form id="search-form" class="mb-3">
+      <form id="search-form" class="mb-3 float-label-control">
             <div class="row">
-              <div class="col-9">
+              <div class="col-2"></div>
+              <div class="col-7">
                 <input
                   type="search"
-                  placeholder="Type a city.."
+                  placeholder="Search for a city"
                   class="form-control"
                   id="city-input"
                   autocomplete="off"
                 />
               </div>
               <div class="col-3">
-                <input
-                  type="submit"
-                  value="Search"
-                  class="btn btn-primary w-100"
-                />
+                <button type="submit" class="btn " id="search_icon">
+                  <i class="fas fa-search" style="font-size: 30px;" aria-hidden="true"></i>
+                </button>
               </div>
             </div>
           </form>
-          <div class="overview">
+      
+        <div class="weather-app">
+          
+          <div class="overview col-6">
             <h1 id="city"></h1>
             <ul>
-              <li>Last updated: <span id="date"></span></li>
+              <li> <span id="date"></span></li>
               <li id="description"></li>
             </ul>
           </div>
@@ -66,19 +76,21 @@
               </ul>
             </div>
           </div>
-          <div class="weather-forecast" id="forecast">
-
-          </div>
-
+          <div class="weather-forecast" id="forecast"></div>
+          
         </div>
+        <div class="footer">
         <small>
           <a
-            href="https://github.com/wecodeschool/vanilla-weather-app"
+            href="https://github.com/emakitshi/weather-app"
             target="_blank"
             >Open-source code</a
           >
-          by Esihle Makitshi
+          by Esihle Makitshi <br> Photo by <a href="https://unsplash.com/@lukechesser?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Luke Chesser</a> on <a href="https://unsplash.com/s/photos/gradient?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
+  
         </small>
+        </div>
       </div>
     </div>
     <script src="src/index.js"></script>
